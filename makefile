@@ -1,0 +1,43 @@
+all: apt git
+
+full-upgrade:
+	apt full-upgrade --yes --force-yes
+
+apt:
+	apt update --yes
+	apt install --yes make vim git
+
+gnome:
+	gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+	gsettings set org.gnome.desktop.session idle-delay 3600
+	gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
+
+home:
+	cp src/.bash_aliases ~
+	cp src/.gitconfig ~
+	cp src/.gitignore ~
+
+bin:
+	cp src/waitandcompile /usr/bin
+	cp src/waitandrun /usr/bin
+	cp src/waitandmake /usr/bin
+	cp src/vendor-lookup /usr/bin
+	cp src/check-commits /usr/bin
+
+githooks:
+	mkdir $@
+
+git: githooks home
+	cp src/pre-commit ~/githooks
+	git config --global core.hooksPath ~/githooks
+	git config --global core.excludesfile ~/.gitignore
+
+clone: pp sec
+
+pp:
+	git clone https://github.com/deanturpin/$@
+
+sec:
+	git clone https://github.com/deanturpin/$@
+	keepass2 $@/dean.kdbx
+

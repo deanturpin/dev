@@ -1,0 +1,14 @@
+#!/bin/bash
+
+[[ $# != 1 ]] && echo What shall I run? && exit
+
+
+while :; do
+
+	inotifywait -qe modify $1
+	
+	clear
+	date
+	
+	./$1;
+done

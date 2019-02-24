@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for file in $(ls -d */.git); do
+	dir=$(dirname $file)
+	echo $dir
+	pushd $dir >& /dev/null
+	git status -s
+	popd >& /dev/null
+done
