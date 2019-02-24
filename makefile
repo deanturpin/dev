@@ -5,8 +5,8 @@ upgrade:
 
 apt:
 	apt update --yes
-	apt install --yes vim git chromium-browser docker.io g++-8 time \
-		clang-format
+	apt install --yes vim git time clang-format iceweasel
+	apt remove --yes firefox
 
 gnome:
 	gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
