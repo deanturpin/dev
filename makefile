@@ -1,6 +1,6 @@
-all: apt git gnome
+all: home apt git bin
 
-full-upgrade:
+upgrade:
 	apt full-upgrade --yes
 
 apt:
