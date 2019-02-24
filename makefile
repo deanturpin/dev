@@ -5,7 +5,8 @@ upgrade:
 
 apt:
 	apt update --yes
-	apt install --yes make vim git
+	apt install --yes vim git chromium-browser docker.io g++-8 time \
+		clang-format
 
 gnome:
 	gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
