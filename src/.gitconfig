@@ -2,9 +2,6 @@
 	name = Definition of Dean
 	email = defofdean@gmail.com
 
-[core]
-	editor = nano
-
 [push]
 	default = simple
 

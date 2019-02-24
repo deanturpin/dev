@@ -4,6 +4,7 @@ RUN apt install --yes make
 RUN apt install --yes chromium-browser
 RUN apt install --yes docker.io
 RUN apt install --yes g++-8
+RUN apt install --yes time
 COPY . src
 WORKDIR src
 RUN make
