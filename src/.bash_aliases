@@ -12,6 +12,4 @@ alias gx='git commit -a && git push'
 alias gxm="git commit -am 'Minor change (reword)' && git push"
 
 # Misc
-alias j=jobs
-alias brighton='curl wttr.in/brighton'
 alias serve='python -m SimpleHTTPServer'
