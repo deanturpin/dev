@@ -1,7 +1,7 @@
-all: apt git
+all: apt git gnome
 
 full-upgrade:
-	apt full-upgrade --yes --force-yes
+	apt full-upgrade --yes
 
 apt:
 	apt update --yes
@@ -31,13 +31,3 @@ git: githooks home
 	cp src/pre-commit ~/githooks
 	git config --global core.hooksPath ~/githooks
 	git config --global core.excludesfile ~/.gitignore
-
-clone: pp sec
-
-pp:
-	git clone https://github.com/deanturpin/$@
-
-sec:
-	git clone https://github.com/deanturpin/$@
-	keepass2 $@/dean.kdbx
-
