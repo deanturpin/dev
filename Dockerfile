@@ -5,5 +5,5 @@ COPY . src
 WORKDIR src
 RUN make
 RUN mkdir /developer
-COPY git.mak /developer
+COPY git.mak /developer/makefile
 WORKDIR /developer
