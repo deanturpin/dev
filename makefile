@@ -1,12 +1,4 @@
-all: home apt git bin
-
-upgrade:
-	apt full-upgrade --yes
-
-apt:
-	apt update --yes
-	apt install --yes vim git time clang-format iceweasel
-	apt remove --yes firefox
+all: home git bin
 
 gnome:
 	gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
