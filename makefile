@@ -1,4 +1,4 @@
-all: home git bin
+all: home git
 
 gnome:
 	gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
@@ -10,17 +10,9 @@ home:
 	cp src/.gitconfig ~
 	cp src/.gitignore ~
 
-bin:
-	cp src/waitandcompile /usr/bin
-	cp src/waitandrun /usr/bin
-	cp src/waitandmake /usr/bin
-	cp src/vendor-lookup /usr/bin
-	cp src/check-commits /usr/bin
-
-githooks:
-	mkdir $@
-
-git: githooks home
-	cp src/pre-commit ~/githooks
-	git config --global core.hooksPath ~/githooks
+git: home
+	git config --global core.hooksPath /usr/bin
 	git config --global core.excludesfile ~/.gitignore
+
+run:
+	sudo docker run --net host --rm -it --env DISPLAY=$DISPLAY deanturpin/dev

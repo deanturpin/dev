@@ -9,10 +9,10 @@ RUN apt install --yes git
 RUN apt install --yes iproute2
 RUN apt install --yes chromium-browser
 RUN apt install --yes iputils-ping
-COPY bin/* /usr/bin
+COPY bin/* /usr/bin/
 COPY . src
 WORKDIR src
 RUN make
 RUN mkdir /developer
-COPY git.mak /developer/makefile
+COPY src/makefile /developer/makefile
 WORKDIR /developer
