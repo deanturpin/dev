@@ -10,6 +10,7 @@ RUN apt install --yes iproute2
 RUN apt install --yes chromium-browser
 RUN apt install --yes iputils-ping
 RUN apt install --yes iputils-tracepath
+RUN apt install --yes clang-format
 
 # Copy all source to container
 COPY . src
