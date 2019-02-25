@@ -16,3 +16,6 @@ git: home
 
 run:
 	sudo docker run --net host --rm -it --env DISPLAY=$DISPLAY deanturpin/dev
+
+build:
+	sudo docker build -t dev .

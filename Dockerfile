@@ -9,9 +9,11 @@ RUN apt install --yes git
 RUN apt install --yes iproute2
 RUN apt install --yes chromium-browser
 RUN apt install --yes iputils-ping
-COPY bin/* /usr/bin/
+
+# Copy all source to container
 COPY . src
 WORKDIR src
+COPY bin/* /usr/bin/
 RUN make
 RUN mkdir /developer
 COPY src/makefile /developer/makefile
