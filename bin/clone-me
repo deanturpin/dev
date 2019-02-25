@@ -3,6 +3,6 @@
 echo What you like to clone?
 read repo
 
-git clone https://github.com/deanturpin/$repo
+git clone --depth=1 https://github.com/deanturpin/$repo
 
 echo $repo
