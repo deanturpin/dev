@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo What you like to clone?
+read repo
+
+git clone https://github.com/deanturpin/$repo
