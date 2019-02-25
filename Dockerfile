@@ -9,6 +9,7 @@ RUN apt install --yes git
 RUN apt install --yes iproute2
 RUN apt install --yes chromium-browser
 RUN apt install --yes iputils-ping
+RUN apt install --yes iputils-tracepath
 
 # Copy all source to container
 COPY . src
