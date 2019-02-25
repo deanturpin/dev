@@ -6,4 +6,5 @@ WORKDIR src
 RUN make
 RUN mkdir /developer
 COPY git.mak /developer/makefile
+COPY src/clone_me.sh /developer/
 WORKDIR /developer
