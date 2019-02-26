@@ -22,7 +22,7 @@ sudo yum install docker.io
 
 Minimal interactive.
 ```bash
-sudo docker run --rm -it --env DISPLAY=$DISPLAY deanturpin/dev
+sudo docker run --rm -it deanturpin/dev
 ```
 
 Expecting to display a UI on the host.
