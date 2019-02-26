@@ -19,6 +19,13 @@ sudo yum install docker.io
 ```
 
 # And run the container
+
+Minimal interactive.
+```bash
+sudo docker run --rm -it --env DISPLAY=$DISPLAY deanturpin/dev
+```
+
+Expecting to display a UI on the host.
 ```bash
 sudo docker run --net host --rm -it --env DISPLAY=$DISPLAY deanturpin/dev
 ```
