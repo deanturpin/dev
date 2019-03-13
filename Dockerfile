@@ -10,6 +10,7 @@ RUN apt install --yes curl
 RUN apt install --yes g++-8
 RUN apt install --yes tmux
 RUN apt install --yes inotify-tools
+RUN apt install --yes gpg
 
 # Install timezone package before keepass2
 RUN apt install --yes tzdata
