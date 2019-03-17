@@ -2,6 +2,7 @@ FROM ubuntu
 RUN apt update --yes
 
 # Just the essentials
+RUN apt install --yes man
 RUN apt install --yes vim
 RUN apt install --yes git
 RUN apt install --yes make
