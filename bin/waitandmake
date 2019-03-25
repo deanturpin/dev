@@ -3,7 +3,5 @@
 while :; do
   inotifywait -qe modify *.cpp
   clear
- 
-  echo Making
-  time make -j $(nproc)
+  time make
 done
