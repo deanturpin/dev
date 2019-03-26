@@ -33,5 +33,6 @@ WORKDIR src
 COPY bin/* /usr/bin/
 RUN make
 RUN mkdir /developer
-COPY src/makefile /developer/makefile
+COPY src/makefile /developer/
 WORKDIR /developer
+CMD make
