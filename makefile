@@ -1,4 +1,4 @@
-all: home git
+all: home git gnome
 
 gnome:
 	gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
@@ -13,9 +13,3 @@ home:
 git: home
 	git config --global core.hooksPath /usr/bin
 	git config --global core.excludesfile ~/.gitignore
-
-run:
-	sudo docker run --net host --rm -it --env DISPLAY=$DISPLAY deanturpin/dev
-
-build:
-	sudo docker build -t dev .
