@@ -35,3 +35,4 @@ RUN make
 RUN mkdir /developer
 COPY src/makefile /developer/
 WORKDIR /developer
+RUN rm -rf /src
