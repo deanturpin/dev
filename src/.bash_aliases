@@ -14,3 +14,6 @@ alias gxm="git commit -am 'Minor change (reword)' && git push"
 # Misc
 alias serve='python -m SimpleHTTPServer'
 readonly dean=http://github.com/deanturpin
+
+# Docker
+alias dev='docker run --rm -it deanturpin/dev'
