@@ -13,7 +13,6 @@ home:
 usrbin:
 	cp bin/* /usr/bin/
 
-
 git: home
 	git config --global core.hooksPath /usr/bin
 	git config --global core.excludesfile ~/.gitignore
