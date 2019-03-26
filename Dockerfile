@@ -24,6 +24,7 @@ RUN apt install --yes inotify-tools
 RUN apt install --yes gpg
 RUN apt install --yes tmux
 RUN apt install --yes eog
+RUN apt install --yes alsa-utils
 
 # Configure build area
 COPY . src
