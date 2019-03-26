@@ -1,4 +1,4 @@
-all: home git gnome
+all: home git gnome usrbin
 
 gnome:
 	gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
@@ -9,6 +9,10 @@ home:
 	cp src/.bash_aliases ~
 	cp src/.gitconfig ~
 	cp src/.gitignore ~
+
+usrbin:
+	cp bin/* /usr/bin/
+
 
 git: home
 	git config --global core.hooksPath /usr/bin

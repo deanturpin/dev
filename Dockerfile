@@ -30,7 +30,6 @@ COPY . src
 WORKDIR src
 
 # Copy scripts and install bsah config
-COPY bin/* /usr/bin/
 RUN make
 RUN mkdir /developer
 COPY src/makefile /developer/
