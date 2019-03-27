@@ -16,3 +16,7 @@ usrbin:
 git: home
 	git config --global core.hooksPath /usr/bin
 	git config --global core.excludesfile ~/.gitignore
+
+apt:
+	apt update
+	apt install -y alsa-utils
