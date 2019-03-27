@@ -1,0 +1,2 @@
+map <F3> :wq<CR>
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!

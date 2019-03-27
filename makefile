@@ -9,6 +9,7 @@ home:
 	cp src/.bash_aliases ~
 	cp src/.gitconfig ~
 	cp src/.gitignore ~
+	cp src/vimrc.local /etc/vim/
 
 usrbin:
 	cp bin/* /usr/bin/
