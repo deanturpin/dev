@@ -1,6 +1,6 @@
 Install Docker with your package manager of choice, fire up [Play With
-Docker](https://labs.play-with-docker.com) or an AWS instance and run the
-dev container.
+Docker](https://labs.play-with-docker.com) or an AWS instance and run the dev
+container.
 
 ## apt
 ```bash
