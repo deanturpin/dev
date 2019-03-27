@@ -22,3 +22,4 @@ apt:
 	apt install -y alsa-utils
 	apt install -y entr
 	apt install -y clang-format
+	apt remove firefox firefox-esr
