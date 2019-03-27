@@ -20,3 +20,4 @@ git: home
 apt:
 	apt update
 	apt install -y alsa-utils
+	apt install -y entr
