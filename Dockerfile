@@ -15,9 +15,9 @@ RUN apt update && \
 
 WORKDIR /root
 
-CMD neofetch --stdout && \
-	dpkg -l $PACKAGES && \
-	figlet howdy && \
-	neofetch && \
-	bash
-
+CMD neofetch && \
+    dpkg -l $PACKAGES && \
+    figlet howdy && \
+    neofetch && \
+    bash
+    
