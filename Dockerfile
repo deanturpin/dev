@@ -18,6 +18,5 @@ WORKDIR /root
 CMD neofetch && \
     dpkg -l $PACKAGES && \
     figlet howdy && \
-    neofetch && \
     bash
     
