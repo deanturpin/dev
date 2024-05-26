@@ -18,5 +18,7 @@ WORKDIR /root
 
 CMD neofetch --stdout && \
     dpkg -l $PACKAGES && \
+    cat /etc/os-release && \
+    lscpu && \
     bash
     

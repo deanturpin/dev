@@ -1,6 +1,8 @@
-# deanturpin/dev
+# dev
 
-Ubuntu devel with all the standard libraries for C++ dev. See [Dockerfile](https://github.com/deanturpin/dev/blob/main/Dockerfile).
+Ubuntu devel with all the standard libraries for C++ dev.
+
+See the [Dockerfile](https://github.com/deanturpin/dev/blob/main/Dockerfile).
 
 ```bash
 docker run deanturpin/dev
