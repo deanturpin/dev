@@ -1,5 +1,6 @@
 FROM ubuntu:devel
 
+# All the things we like
 ENV PACKAGES "vim git curl file htop parallel tree tmux duf" \
 	"make cmake ninja-build vim time neofetch figlet mold entr" \
 	"g++-14 gdb lldb clang" \
