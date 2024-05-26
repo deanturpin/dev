@@ -1,8 +1,6 @@
 # deanturpin/dev
 
-C++ dev environment: Ubuntu devel with all the common libraries.
-
-See [Dockerfile](https://github.com/deanturpin/dev/blob/main/Dockerfile).
+Ubuntu devel with all the standard libraries for C++ dev. See [Dockerfile](https://github.com/deanturpin/dev/blob/main/Dockerfile).
 
 ```bash
 docker run deanturpin/dev
@@ -45,8 +43,4 @@ ii  tree                         2.1.1-2ubuntu3                          amd64  
 ii  ubuntu-release-upgrader-core 1:24.04.18                              all          manage release upgrades
 ii  vim                          2:9.1.0016-1ubuntu7                     amd64        Vi IMproved - enhanced vi editor
  _                      _       
-| |__   _____      ____| |_   _ 
-| '_ \ / _ \ \ /\ / / _` | | | |
-| | | | (_) \ V  V / (_| | |_| |
-|_| |_|\___/ \_/\_/ \__,_|\__, |
 ```
