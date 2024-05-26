@@ -1,6 +1,8 @@
 # deanturpin/dev
 
-C++ dev environment.
+C++ dev environment: Ubuntu devel with all the common libraries.
+
+See [Dockerfile](https://github.com/deanturpin/dev/blob/main/Dockerfile).
 
 ```bash
 docker run deanturpin/dev
