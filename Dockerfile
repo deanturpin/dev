@@ -2,7 +2,7 @@ FROM ubuntu:devel
 
 ENV PACKAGES "vim git curl file htop parallel tree tmux duf" \
 	"make cmake ninja-build vim time neofetch figlet mold entr" \
-	"g++-14 gdb lldb" \
+	"g++-14 gdb lldb clang" \
 	"libgtest-dev libbenchmark-dev libtbb-dev libpcap-dev" \
 	"python3 python3-pip python3-all-venv" \
 	"ubuntu-release-upgrader-core" \
