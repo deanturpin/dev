@@ -16,9 +16,8 @@ RUN apt update && \
 
 WORKDIR /root
 
-CMD neofetch --stdout && \
+CMD figlet deanturpin/gcc && \
+    neofetch --stdout && \
     dpkg -l $PACKAGES && \
     cat /etc/os-release && \
-    lscpu && \
-    bash
-    
+    lscpu
