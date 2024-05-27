@@ -16,7 +16,7 @@ RUN apt update && \
 
 WORKDIR /root
 
-CMD figlet deanturpin/gcc && \
+CMD figlet deanturpin/dev && \
     neofetch --stdout && \
     dpkg -l $PACKAGES && \
     cat /etc/os-release && \
