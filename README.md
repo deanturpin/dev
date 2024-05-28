@@ -1,12 +1,8 @@
 # dev
 
-Ubuntu devel with all the standard libraries for C++ dev.
-
-See the [Dockerfile](https://github.com/deanturpin/dev/blob/main/Dockerfile).
+Ubuntu devel with all the standard libraries for C++ dev. See the [Dockerfile](https://github.com/deanturpin/dev/blob/main/Dockerfile).
 
 ```bash
-docker run deanturpin/dev
-
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
 ||/ Name                         Version                                 Architecture Description
