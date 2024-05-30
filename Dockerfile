@@ -17,7 +17,8 @@ RUN apt update && \
 WORKDIR /root
 
 CMD figlet deanturpin/dev && \
-    neofetch --stdout && \
     dpkg -l $PACKAGES && \
     cat /etc/os-release && \
-    lscpu
+    echo && \ 
+    echo "sudo apt install --yes $PACKAGES"
+
