@@ -17,7 +17,7 @@ RUN apt update && \
 
 WORKDIR /root
 
-CMD cowsay -d docker run deanturpin/dev && \
+CMD figlet deanturpin/dev && \
     dpkg -l $PACKAGES && \
     cat /etc/os-release && \
     echo && \ 
