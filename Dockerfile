@@ -17,7 +17,7 @@ RUN apt update && \
 
 WORKDIR /root
 
-CMD cowthink -d docker run deanturpin/dev && \
+CMD cowsay -d docker run deanturpin/dev && \
     dpkg -l $PACKAGES && \
     cat /etc/os-release && \
     echo && \ 
