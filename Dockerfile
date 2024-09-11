@@ -9,7 +9,7 @@ ENV PACKAGES "vim git curl file htop parallel tree tmux duf" \
 	"ubuntu-release-upgrader-core sloccount pandoc" \
 	"iputils-ping iputils-tracepath iproute2 nmap arp-scan netcat-traditional mtr" \
 	"asterisk" \
-	"cowsay sl"
+	"cowsay sl x11-xserver-utils"
 
 RUN apt update && \
 	apt full-upgrade --yes && \
