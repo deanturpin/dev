@@ -21,7 +21,7 @@ WORKDIR /root
 
 CMD figlet deanturpin/dev && \
     dpkg -l $PACKAGES && \
-    source /etc/os-release && figlet $NAME $VERSION && \
+    . /etc/os-release && figlet $NAME $VERSION && \
     echo && \ 
     echo "sudo apt install --yes $PACKAGES"
 
