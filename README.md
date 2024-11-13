@@ -2,6 +2,12 @@
 
 Ubuntu devel with all the standard libraries for C++ dev. See the [Dockerfile](https://github.com/deanturpin/dev/blob/main/Dockerfile).
 
+Running the container will dump all dev package versions.
+
+```bash
+docker run deanturpin/dev
+```
+
 ```bash
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
