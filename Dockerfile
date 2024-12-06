@@ -12,8 +12,8 @@ ENV PACKAGES "vim git curl file htop parallel tree tmux duf" \
 	"cowsay sl x11-xserver-utils"
 
 RUN apt update && \
-	apt full-upgrade --yes && \
 	apt install --yes $PACKAGES && \
+	apt full-upgrade --yes && \
 	apt clean distclean autoclean autoremove && \
 	get-oui
 
