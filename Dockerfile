@@ -1,4 +1,4 @@
-FROM ubuntu:devel
+FROM ubuntu:plucky
 
 # All the things we like
 ENV PACKAGES "vim git curl file htop parallel tree tmux duf" \
@@ -12,8 +12,8 @@ ENV PACKAGES "vim git curl file htop parallel tree tmux duf" \
 	"cowsay sl x11-xserver-utils"
 
 RUN apt update && \
-	apt install --yes $PACKAGES && \
 	apt full-upgrade --yes && \
+	apt install --yes $PACKAGES && \
 	apt clean distclean autoclean autoremove && \
 	get-oui
 
