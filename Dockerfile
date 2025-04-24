@@ -22,4 +22,3 @@ CMD figlet deanturpin/dev && \
     . /etc/os-release && figlet $NAME $VERSION && \
     echo && \ 
     echo "sudo apt install --yes $PACKAGES"
-
