@@ -13,7 +13,6 @@ ENV PACKAGES "vim git curl file htop parallel tree tmux duf" \
 RUN apt update && \
 	apt full-upgrade --yes && \
 	apt install --yes $PACKAGES && \
-	apt clean distclean autoclean autoremove && \
 	get-oui
 
 WORKDIR /root
