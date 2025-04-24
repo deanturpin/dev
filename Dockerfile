@@ -1,4 +1,4 @@
-FROM ubuntu:plucky
+FROM ubuntu:devel
 
 # All the things we like
 ENV PACKAGES "vim git curl file htop parallel tree tmux duf" \
